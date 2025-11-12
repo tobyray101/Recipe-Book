@@ -5,73 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Lizzie & Tobys Recipe Book</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin: 0;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8E2FF;
+            }
+        h1 {
+            text-align: center;
+            padding-left: 20px;
+            font-size: 3rem;
+            width: 100%;
+         }
+         main {
+            background-color: #FFFCE5;
+            margin: 0;
+            *:first-child {
+                margin-top: 0;
+            }
+            padding-bottom: 40px;
+         }
+         h2 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 3.25rem;
+         }
+         h3 {
+            font-size: 2.5rem;
+            text-align: center;
+         }
+         .breakfast, .lunch, .deserts {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+         }
+         .breakfast ul, .lunch ul, .deserts ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align: center;
+            font-size: 1.5rem;
+         }
+         .dinner {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+         }
+         .dinner-list {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+            padding: 2rem;
+            max-width: 800px;
+            margin:0 auto;
+         }
+         .dinner-list ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+            flex: 1;
+            text-align: center;
+            font-size: 1.5rem;
+         }
+         .dinner-list li {
+            margin-bottom: 0.25rem;
+         }
+        @media (max-width: 700px) {
+        .dinner-list {
+        flex-direction: column;
+            }
+        }
+
+
+
+
+
+         .recipe-lists a:hover {
+             color: #C8A6FF; 
+        }
+         .divider {
+            width: 80%;
+            height: 1px;
+            background-color: #535353;
+            margin: 40px auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Lizzie & Tobys Recipe Book</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"><strong>Home</strong></a></li>
-                <li><a href="#recipes"><strong>Recipes</strong></a></li>
-            </ul>
-        </nav>
+
+        <h1><i class="fa-solid fa-seedling"></i>Lizzie & Tobys Recipe Book<i class="fa-solid fa-seedling"></i></h1>
+
     </header>
     <main>
-        <h3>Select a category</h3>
         <section id="recipes">
-            <h2>Recipes</h2>
-            <div class recipes>
-                <div class Breakfast>
+            <h2><u><strong>Our Recipes</strong></u></h2>
+            <div class="recipes">
+                <div class="breakfast">
+                    <h3>Breakfast</h3>
                     <ul>
-                        <li><a href=""><strong>Fried Egg Sandwich</strong></a></li>
-                        <li><a href=""><strong>Fry Up</strong></a></li>
-                        <li><a href=""><strong>Pancakes</strong></a></li>
-                        <li><a href=""><strong>Poached Egg On Toast</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Fried Egg Sandwich</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Fry Up</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Pancakes</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Poached Egg On Toast</strong></a></li>
                     </ul>
                 </div>
-                <div class Lunch>
+                <div class="divider"></div>
+                <div class="lunch">
+                    <h3>Lunch</h3>
                     <ul>
-                        <li><a href=""><strong>Blue Cheese and Beet Rosti with Blue Cheese Sauce and Whipped Avo</strong></a></li>
-                        <li><a href=""><strong>Focaccia</strong></li>
+                        <li><a href="" target="_blank"><strong>Blue Cheese and Beet Rosti with Blue Cheese Sauce and Whipped Avo</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Focaccia Bread</strong></a></li>
                     </ul>
                 </div>
-                <div class Dinner>
+                <div class="divider"></div>
+                <section class="dinner">
+                    <h3>Dinner</h3>
+                    <div class="dinner-list">
                     <ul>
-                        <li><a href=""><strong>Burgers</strong></a></li>
-                        <li><a href=""><strong>Burritos</strong></a></li>
-                        <li><a href=""><strong>Dolphinoui Potatoes</strong></a></li>
-                        <li><a href=""><strong>Fajitas</strong></a></li>
-                        <li><a href=""><strong>Fridge Raid Pasta</strong></a></li>
-                        <li><a href=""><strong>Gyros</strong></a></li>
-                        <li><a href=""><strong>Halloumi & Harrisa Lentils</strong></a></li>
-                        <li><a href=""><strong>Jazzed Packet Ramen</strong></a></li>
-                        <li><a href=""><strong>Lasagna</strong></a></li>
-                        <li><a href=""><strong>Meatball Pasta</strong></a></li>
-                        <li><a href=""><strong>Meatball, Mash & gravy</strong></a></li>
-                        <li><a href=""><strong>Miso Salmon, Noodles & Sweet chilli Veg</strong></a></li>
-                        <li><a href=""><strong>Pad Thai</strong></a></li>
-                        <li><a href=""><strong>Paneer Curry</strong></a></li>
-                        <li><a href=""><strong>Pizzas</strong></a></li>
-                        <li><a href=""><strong>Roast Veg Pasta</strong></a></li>
-                        <li><a href=""><strong>Rose Pasta</strong></a></li>
-                        <li><a href=""><strong>Seared Tuna Steak</strong></a></li>
-                        <li><a href=""><strong>Spag Bol</strong></a></li>
-                        <li><a href=""><strong>Stir Fry</strong></a></li>
-                        <li><a href=""><strong>Sushi</strong></a></li>
-                        <li><a href=""><strong>Tacos</strong></a></li>
-                        <li><a href=""><strong>Tapas</strong></a></li>
-                        <li><a href=""><strong>Thai Red Curry</strong></a></li>
-                        <li><a href=""><strong>Thai Red Noodles</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Aribiata Pasta</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Burgers</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Burritos</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Creamy Chicken, Mash Pie</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Dolphinoui Potatoes</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Fajitas</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Fridge Raid Pasta</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Gyros</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Halloumi & Harrisa Lentils</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Jazzed Packet Ramen</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Lasagna</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Meatball Pasta</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Meatball, Mash & gravy</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Miso Salmon, Noodles & Sweet chilli Veg</strong></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="" target="_blank"><strong>Pad Thai</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Paneer Curry</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Pizzas</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Roast Veg Pasta</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Rose Pasta</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Seared Tuna Steak</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Shreded Tofu Crunch Warp</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Spag Bol</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Stir Fry</strong></a></li>
+                        <li><a href="sushi.html" target="_blank"><strong>Sushi</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Tacos</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Tapas</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Thai Red Curry</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Thai Red Noodles</strong></a></li>
                     </ul>
                 </div>
-                <div class Deserts>
+                </section>
+                <div class="divider"></div>
+                <div class="deserts">
+                    <h3>Deserts</h3>
                     <ul>
-                        <li><a href=""><strong>Browies</strong></a></li>
-                        <li><a href=""><strong>Sorbet & Fruit Bowl</strong></a></li>
-                        <li><a href=""><strong>Syrup Spounge Cake</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Brownies</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Creme Catalana</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Sorbet & Fruit Bowl</strong></a></li>
+                        <li><a href="" target="_blank"><strong>Syrup Spounge Cake</strong></a></li>
                     </ul>
-            </div>
-        </section>
+                </div>
+                </section>
     </main>
     <footer>
     </footer>
