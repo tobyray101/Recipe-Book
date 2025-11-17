@@ -1,4 +1,120 @@
+body {
+    margin:0;
+    padding:0;
+}
+header {
+    margin:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #F8E2FF;
+    position: relative;
+}
 
+h1 {
+    padding: 10px;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    flex:1;
+    text-align: center;
+    margin:0;
+    font-size: 3rem;
+}
+
+#home-button {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: aquamarine;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: absolute;  
+    right: 1rem;           /* place button on left */
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home-button:hover {
+    background-color: rgb(99, 189, 183);
+    cursor: pointer;
+    text-decoration: none;
+}
+#home-button:active {
+    text-decoration: none;
+}
+#home-button:visited {
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #FFFCE5;
+}
+h2 {
+    font-family: 'Lucida Handwriting', cursive;
+}
+p {
+    font-family: 'Lucida Handwriting', cursive;
+}
+.image-container {
+    margin-top: 30px;
+    margin-left: 20px;
+    width:fit-content;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.about {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.ingredients {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 0;
+}
+.ingredients ul {
+    list-style: none;
+    font-family:'Lucida Handwriting', cursive;
+    padding: 0;
+}
+
+
+.method {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+.method ol {
+    list-style: none;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.tips {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    list-style: none;
+}
+.tips ul {
+    list-style: none;
+    font-family: 'Lucida Handwriting', cursive;
+}
 
 
 
