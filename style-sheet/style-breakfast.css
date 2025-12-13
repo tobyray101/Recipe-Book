@@ -8,7 +8,7 @@ header {
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: #F8E2FF;
+    background-color: rgb(128, 180, 211);
     position: relative;
 }
 
@@ -29,7 +29,7 @@ h1 {
     font-size: 2rem;
     text-decoration: none;
     color: black;
-    background-color: #e8cff0;
+    background-color: #95deff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     position: absolute;  
@@ -39,7 +39,7 @@ h1 {
     border: 1px solid black;
 }
 #home-button:hover {
-    background-color: rgb(99, 189, 183);
+    background-color: #F8E2FF;
     cursor: pointer;
     text-decoration: none;
 }

@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    padding:0;
+}
+header {
+    margin:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(155, 218, 130);
+    position: relative;
+}
+h1 {
+    padding: 10px;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin:0;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 13%;
+}
+
+#home-button {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(184, 241, 162);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: absolute;  
+    right: 1rem;          
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid black;
+}
+#home-button:hover {
+    background-color: #F8E2FF;
+    cursor: pointer;
+    text-decoration: none;
+}
+#home-button:active {
+    text-decoration: none;
+}
+#home-button:visited {
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    background-color: #FFFCE5;
+}
+h2 {
+    font-family: 'Lucida Handwriting', cursive;
+}
+p {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1.5rem;
+}
+.image-container {
+    margin-top: 30px;
+    margin-left: 20px;
+    width:fit-content;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.ingredients {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    padding: 0;
+}
+.ingredients ul {
+    list-style: none;
+    font-family:'Lucida Handwriting', cursive;
+    padding: 0;
+}
+
+
+.method {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+.method ol {
+    list-style: none;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1rem;
+}
+
+.tips {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    list-style: none;
+    border: 2px dashed black;
+    background-color: #e7e4cc;
+}
+.tips ul {
+    list-style: none;
+    font-family: 'Lucida Handwriting', cursive;
+}
+.tips h3 {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+ @media (max-width: 700px) {
+    header{
+        margin:0;
+        width:100%;
+
+    }
+    header h1 {
+        font-size:2rem;
+    }
+    header #home-button {
+        font-size:0.8rem;
+        padding:0.2rem 0.4rem;
+        top: 0.5rem;
+        right: 0.5rem;
+        transform: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container, .about, .ingredients, .method, .tips {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        width: 90%;
+        margin-bottom: 20px;
+        margin-left:0;
+
+    }
+    .about p {
+        font-size: 1.2rem;
+    }
+    .method ol {
+        padding-left:0;
+    }
+    .tips ul {
+        padding-left:0;
+    }
+
+ }
