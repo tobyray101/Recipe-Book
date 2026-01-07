@@ -125,6 +125,8 @@ p {
 .tips ul {
     list-style: none;
     font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+    padding-right: 20px;
 }
 .tips h3 {
     font-family: 'Lucida Handwriting', cursive;
