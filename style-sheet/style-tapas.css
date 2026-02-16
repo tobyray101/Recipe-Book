@@ -1,0 +1,122 @@
+body{
+    margin:0;
+    padding:0;
+}
+header {
+    margin:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(241, 193, 88);
+    position: relative;
+}
+h1 {
+    padding: 10px;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin:0;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 13%;
+}
+
+#home-button {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(243, 203, 115);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: absolute;  
+    right: 1rem;          
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid black;
+}
+#home-button:hover {
+    background-color: #F8E2FF;
+    cursor: pointer;
+    text-decoration: none;
+}
+#home-button:active {
+    text-decoration: none;
+}
+#home-button:visited {
+    text-decoration: none;
+}
+ .divider {
+            width: 80%;
+            height: 1px;
+            background-color: #535353;
+            margin: 40px auto;
+        }
+ h2 {
+    font-family: 'Lucida Handwriting', cursive;
+}
+p {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1.5rem;
+}
+.about {
+    text-align: center;
+}
+.ingredients {
+    text-align: center;
+    padding: 0;
+}
+.ingredients h2 { 
+    text-align: center;
+}
+.ingredients ul {
+    list-style: none;
+    font-family:'Lucida Handwriting', cursive;
+    padding: 0;
+}
+.instructions {
+    text-align: center;
+    padding: 0;
+}
+.instructions h2 {
+    text-align: center;
+}
+.instructions ol {
+    list-style: none;
+    font-family:'Lucida Handwriting', cursive;
+    padding: 0;
+}
+.gambas{
+    text-align: center;
+    padding: 0;
+}
+.padron{
+    text-align: center;
+    padding: 0;
+}
+.meatballs{
+    text-align: center;
+    padding: 0;
+}
+.potatas{
+    text-align: center;
+    padding: 0;
+}
+.oven{
+    text-align: center;
+    padding: 0;
+}
+.oveninst{
+    text-align: center;
+    padding: 0;
+}
+.oveninst ol {
+    list-style: none;
+    font-family:'Lucida Handwriting', cursive;
+    padding: 0;
+}
+
+
+
